@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+    <base href="https://htmlacademy-adaptive.github.io/1657873-cat-energy-27/4/">
+</head>
+  <body class="page_body">
+    <header class="main-header">
+      <a class="main-header-logo">
+        <img class="main-header__logo-image" src="#" width="" height="" alt="Логотип Кэт энерджи">
+      </a>
+
+      <img class="main-header-company-image company-logo" src="#" width="" height="" alt="Имя компании">
+
+      <nav class="main-nav">
+        <button class="main-nav-toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <div class="main-nav-wrapper">
+          <ul class="main-nav-list site-list">
+            <li class="site-list-item site-list-item-current">
+              <a>Главная</a>
+            </li>
+            <li class="site-list-item">
+              <a>Каталог продукции</a>
+            </li>
+            <li class="site-list-item">
+              <a>Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="select-program">
+        <div class="select-program-wrapper">
+          <h1 class="select-program-title">Подбор программы</h1>
+          <p class="select-program-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+          <form action="https://echo.htmlacademy.ru" class="cat-info" method="post">
+            <h2 class="visually-hidden"> Информация о котике.</h2>
+            <ul class="cat-info-list">
+              <li class="cat-info-item">
+                <p class="cat-info-parameter cat-info-parameter-required">Имя:*</p>
+                <label class="visually-hidden" for="name">Имя.</label>
+                <input class="cat-info-input" type="text" id="name" name="name" placeholder="Барсик" required/>
+              </li>
+
+              <li class="cat-info-item">
+                <p class="cat-info-parameter cat-info-parameter-required">Вес(Кг):*</p>
+                <label class="visually-hidden" for="weight">Вес.</label>
+                <input class="cat-info-input" type="number" id="weight" name="weight" placeholder="7" required/>
+              </li>
+
+              <li class="cat-info-item">
+                <p class="cat-info-parameter">Возраст (лет):</p>
+                <label class="visually-hidden" for="age">Возраст.</label>
+                <input class="cat-info-input" type="number" id="age" name="age" placeholder="7"/>
+              </li>
+            </ul>
+          </form>
+
+          <form action="https://echo.htmlacademy.ru" class="goal" method="post">
+            <ul class="goal-list">
+              <li class="goal-item">
+                <label class="goal-control">
+                  <input class="visually-hidden" type="radio" name="goal" checked/>
+                  <span class="goal-control-mark"></span>
+                  <span class="goal-control-label">Похудение</span>
+                </label>
+              </li>
+
+              <li class="goal-item">
+                <label class="goal-control">
+                  <input class="visually-hidden" type="radio" name="goal"/>
+                  <span class="goal-control-mark"></span>
+                  <span class="goal-control-label">Набор массы</span>
+                </label>
+              </li>
+
+              <li class="goal-item">
+                <label class="goal-control">
+                  <input class="visually-hidden" type="radio" name="goal"/>
+                  <span class="goal-control-mark"></span>
+                  <span class="goal-control-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <section class="contacts-info">
+        <div class="contacts-info-wrapper">
+          <h2 class="contacts-info-title">Контактные данные (владельца кота)</h2>
+          <form action="https://echo.htmlacademy.ru" class="user-contacts" method="post">
+            <ul class="user-contacts-list">
+              <li class="user-contacts-item">
+                <p class="user-contacts-parameter user-contacts-parameter-required">E-mail:*</p>
+                <label class="visually-hidden" for="email">Электронная почта.</label>
+                <input class="user-contacts-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required/>
+              </li>
+
+              <li class="user-contacts-item">
+                <p class="user-contacts-parameter user-contacts-parameter-required">Телефон:*</p>
+                <label class="visually-hidden" for="phone">Телефон.</label>
+                <input class="user-contacts-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required/>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <section class="comment">
+        <div class="comment-wrapper">
+          <h2 class="comment-title">Комментарий</h2>
+          <label class="visually-hidden" for="comment">Комментарий.</label>
+          <textarea class="comment-text-area" placeholder="Расскажите обо всех повАдках кота" id="comment" name="comment"></textarea>
+        </div>
+      </section>
+
+      <section class="additionally">
+        <div class="additionally-wrapper">
+          <h2 class="additionally-title">Дополнительно</h2>
+
+          <ul class="additionally-list">
+            <li class="additionally-item">
+              <label class="additionally-control">
+                <input class="additionally-input" type="checkbox" name="sweetener" checked/>
+                <span class="additionally-product">Сахарозаменитель</span>
+              </label>
+            </li>
+
+            <li class="additionally-item">
+              <label class="additionally-control">
+                <input class="additionally-input" type="checkbox" name="water"/>
+                <span class="additionally-product">Питьевая вода</span>
+              </label>
+            </li>
+
+            <li class="additionally-item">
+              <label class="additionally-control">
+                <input class="additionally-input" type="checkbox" name="milk"/>
+                <span class="additionally-product">Молоко</span>
+              </label>
+            </li>
+
+            <li class="additionally-item">
+              <label class="additionally-control">
+                <input class="additionally-input" type="checkbox" name="vitamins"/>
+                <span class="additionally-product">Витамины</span>
+              </label>
+            </li>
+          </ul>
+
+          <button class="button-send-application button">Отправить заявку</button>
+          <p class="additionally-remark">* — Обязательные поля</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer-wrapper">
+        <div class="main-footer-company company">
+          <img class="company-image company-logo" src="#" width="" height="" alt="Имя компании">
+        </div>
+
+        <div class="main-footer-social social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link social-link-vk" href=""></a>
+            </li>
+
+            <li class="social-item">
+              <a class="social-link social-link-youtube" href=""></a>
+            </li>
+
+            <li class="social-item">
+              <a class="social-link social-link-telegram" href=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer-html-academy html-academy">
+          <a class="html-academy-link" href="">HTML Academy</a>
+          <a class="html-academy-logo" href="">
+            <img src="" width="" height="" alt="Логотип HTML-Academy.">
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
