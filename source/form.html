@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page_body">
+  <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="#" width="" height="" alt="Логотип Кэт энерджи">
@@ -40,53 +40,53 @@
           <p class="select-program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
           <form action="https://echo.htmlacademy.ru" class="select-program__form" method="post">
-            <fieldset class="from-info">
+            <fieldset class="form-info">
               <legend class="visually-hidden"> Информация о котике.</legend>
-              <ul class="from-info__list">
-                <li class="from-info__item">
-                  <p class="from-info__parameter from-info__parameter--required">Имя:*</p>
+              <ul class="form-info__list">
+                <li class="form-info__item">
+                  <p class="form-info__parameter form-info__parameter--required">Имя:*</p>
                   <label class="visually-hidden" for="name">Имя.</label>
-                  <input class="from-info__input" type="text" id="name" name="name" placeholder="Барсик" required/>
+                  <input class="form-info__input" type="text" id="name" name="name" placeholder="Барсик" required/>
                 </li>
 
-                <li class="from-info__item">
-                  <p class="from-info__parameter from-info__parameter--required">Вес(Кг):*</p>
+                <li class="form-info__item">
+                  <p class="form-info__parameter form-info__parameter--required">Вес(Кг):*</p>
                   <label class="visually-hidden" for="weight">Вес.</label>
-                  <input class="from-info__input" type="number" id="weight" name="weight" placeholder="7" required/>
+                  <input class="form-info__input" type="number" id="weight" name="weight" placeholder="7" required/>
                 </li>
 
-                <li class="from-info__item">
-                  <p class="from-info__parameter">Возраст (лет):</p>
+                <li class="form-info__item">
+                  <p class="form-info__parameter">Возраст (лет):</p>
                   <label class="visually-hidden" for="age">Возраст.</label>
-                  <input class="from-info__input" type="number" id="age" name="age" placeholder="7"/>
+                  <input class="form-info__input" type="number" id="age" name="age" placeholder="7"/>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="from-radio">
+            <fieldset class="form-radio">
               <legend class="visually-hidden">Цель.</legend>
-              <ul class="from-radio__list">
-                <li class="from-radio__item">
-                  <label class="from-radio__control">
+              <ul class="form-radio__list">
+                <li class="form-radio__item">
+                  <label class="form-radio__control">
                     <input class="visually-hidden" type="radio" name="goal" checked/>
-                    <span class="from-radio__control-mark"></span>
-                    <span class="from-radio__control-label">Похудение</span>
+                    <span class="form-radio__control-mark"></span>
+                    <span class="form-radio__control-label">Похудение</span>
                   </label>
                 </li>
 
-                <li class="from-radio">
-                  <label class="from-radio__control">
+                <li class="form-radio">
+                  <label class="form-radio__control">
                     <input class="visually-hidden" type="radio" name="goal"/>
-                    <span class="from-radio__control-mark"></span>
-                    <span class="from-radio__control-label">Набор массы</span>
+                    <span class="form-radio__control-mark"></span>
+                    <span class="form-radio__control-label">Набор массы</span>
                   </label>
                 </li>
 
-                <li class="from-radio__item">
-                  <label class="from-radio__control">
+                <li class="form-radio__item">
+                  <label class="form-radio__control">
                     <input class="visually-hidden" type="radio" name="goal"/>
-                    <span class="from-radio__control-mark"></span>
-                    <span class="from-radio__control-label">Не знаю (Нужен ваш совет)</span>
+                    <span class="form-radio__control-mark"></span>
+                    <span class="form-radio__control-label">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
@@ -96,23 +96,23 @@
               <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
               <ul class="form-contacts__list">
                 <li class="form-contacts__item">
-                  <p class="from-contacts__parameter from-contacts__parameter--required">E-mail:*</p>
+                  <p class="form-contacts__parameter form-contacts__parameter--required">E-mail:*</p>
                   <label class="visually-hidden" for="email">Электронная почта.</label>
-                  <input class="from-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required/>
+                  <input class="form-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required/>
                 </li>
 
-                <li class="from-contacts__item">
-                  <p class="from-contacts__parameter from-contacts__parameter--required">Телефон:*</p>
+                <li class="form-contacts__item">
+                  <p class="form-contacts__parameter form-contacts__parameter--required">Телефон:*</p>
                   <label class="visually-hidden" for="phone">Телефон.</label>
-                  <input class="from-contacts__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required/>
+                  <input class="form-contacts__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required/>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="from-comment">
-              <legend class="from-comment__title">Комментарий</legend>
+            <fieldset class="form-comment">
+              <legend class="form-comment__title">Комментарий</legend>
               <label class="visually-hidden" for="comment">Комментарий.</label>
-              <textarea class="from-comment__text-area" placeholder="Расскажите обо всех повАдках кота" id="comment" name="comment"></textarea>
+              <textarea class="form-comment__text-area" placeholder="Расскажите обо всех повАдках кота" id="comment" name="comment"></textarea>
             </fieldset>
 
             <fieldset class="form-checkbox">
