@@ -2,10 +2,19 @@
   margin: 0;
   padding: 20px;
   padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 110px;
+  }
 }
 
 .select-program__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @font-oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -13,7 +22,7 @@
 }
 
 .select-program__description {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @font-oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

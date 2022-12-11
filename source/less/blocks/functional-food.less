@@ -1,15 +1,17 @@
 .functional-food {
-  background-color: @color-basic-green;
   background-image: url("/source/img/index-cat-background.jpg");
   background-repeat: no-repeat;
   color: @color-white;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @font-oswald;
+
+  box-sizing: border-box;
   padding: 20px;
   padding-top: 27px;
 
   @media (min-width: @tablet-width) {
     width: 709px;
     min-height: 810px;
+    
     background-image: none;
   }
 

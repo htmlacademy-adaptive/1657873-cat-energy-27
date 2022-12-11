@@ -1,13 +1,16 @@
 .example {
   background-color: @color-light-grey;
+
   box-sizing: border-box;
   margin: 0;
   padding: 20px;
   padding-top: 25px;
   padding-bottom: 40px;
+
   @media (min-width: @tablet-width) {
     padding: 30px;
   }
+
   @media (min-width: @desktop-width) {
     padding: 110px;
     padding-bottom: 0;
@@ -21,8 +24,8 @@
   display: grid;
   grid-template-columns: 280px;
   grid-template-areas: "description"
-  "parametrs"
-  "range";
+    "parametrs"
+    "range";
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 708px;
@@ -34,7 +37,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 436px 591px;
     grid-template-areas: "description range"
-    "parametrs range";
+      "parametrs range";
   }
 }
 
