@@ -1,0 +1,80 @@
+.catalog {
+  background-color: @color-white;
+
+  box-sizing: border-box;
+  padding: 20px;
+  padding-right: 28px;
+  padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 110px;
+    padding-top: 27px;
+  }
+}
+
+.catalog__wrapper {
+  width: 282px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.catalog__title {
+  font-family: @font-oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog__product-list {
+  margin-bottom: 36px;
+
+  display: grid;
+  grid-template-columns: 282px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 63px 80px;
+  }
+}
+
+.catalog__show-more {
+  font-family: @font-oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-black-2;
+  text-transform: uppercase;
+}
+
+.catalog__comment {
+  font-family: @font-oswald;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: @color-dark-grey;
+}
+
+.catalog__button-show-all {
+  font-family: @font-oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-dark-grey;
+  text-transform: uppercase;
+}
