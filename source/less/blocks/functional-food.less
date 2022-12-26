@@ -1,0 +1,46 @@
+.functional-food {
+  background-image: url("../img/index-cat-background.jpg");
+  background-repeat: no-repeat;
+  color: @color-white;
+  font-family: @font-oswald;
+
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 709px;
+    min-height: 810px;
+
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index-cat-background.jpg");
+    background-repeat: no-repeat;
+    min-width: 920px;
+    min-height: 499px;
+  }
+}
+
+.functional-food__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.functional-food__slogan {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.functional-food__button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: @color-white;
+  text-transform: uppercase;
+}
