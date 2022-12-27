@@ -20,6 +20,7 @@
 
 .programs-list__item {
   background-color: @color-basic-grey;
+
   position: relative;
   padding-left: 20px;
   padding-top: 30px;
@@ -200,6 +201,11 @@
   color: @color-black;
   text-transform: uppercase;
   position: relative;
+  padding-right: 60px;
+
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -216,21 +222,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  &::before {
-    content: url("../img/icon-arrow.svg");
-    position: absolute;
-    top: 3px;
-    left: 100px;
-
-    @media (min-width: @tablet-width) {
-      top: -3px;
-      left: 125px;
-    }
-
-    @media (min-width: @desktop-width) {
-      /*...*/
-    }
   }
 }
