@@ -1092,7 +1092,7 @@
   .example__wrapper {
     width: 100%;
     grid-template-columns: 436px 560px;
-    gap: 0px 224px;
+    gap: 0 224px;
     grid-template-areas: "description range" "parametrs range";
     background: linear-gradient(to bottom, #ffffff 22%, #EAEAEA 22%, #EAEAEA 44%, #EAEAEA 44%);
   }
@@ -1185,7 +1185,6 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
   width: 188px;
   margin: 0 auto;
 }
@@ -1902,6 +1901,11 @@
     margin-bottom: 7px;
   }
 }
+@media (min-width: 1440px) {
+  .product__detail-wrapper {
+    /*...*/
+  }
+}
 .product__description {
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -2109,6 +2113,11 @@
     margin-bottom: 0;
   }
 }
+@media (min-width: 1440px) {
+  .product-editional__detail {
+    /*...*/
+  }
+}
 .product-editional__volume {
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -2160,6 +2169,11 @@
   text-align: center;
   padding: 10px;
   grid-area: button;
+}
+@media (min-width: 768px) {
+  .product-editional__order {
+    /*...*/
+  }
 }
 @media (min-width: 1440px) {
   .product-editional__order {
@@ -2273,7 +2287,6 @@
 /* form.html */
 .select-program {
   width: 320px;
-  margin: 0;
   padding: 20px;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -2488,6 +2501,11 @@
     border: none;
   }
 }
+@media (min-width: 1440px) {
+  .form-info {
+    /*...*/
+  }
+}
 .form-info__list {
   list-style: none;
   padding: 0;
@@ -2497,6 +2515,11 @@
 @media (min-width: 768px) {
   .form-info__list {
     padding-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .form-info__list {
+    /*...*/
   }
 }
 .form-info__item {
@@ -2510,6 +2533,11 @@
 @media (min-width: 768px) {
   .form-info__item:not(:last-child) {
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .form-info__item {
+    /*...*/
   }
 }
 .form-info__parameter {
@@ -2605,7 +2633,6 @@
 }
 .form-radio {
   padding-bottom: 19px;
-  border: none;
   border: 1px solid #E7E7E7;
 }
 @media (min-width: 768px) {
@@ -2756,6 +2783,11 @@
 @media (min-width: 768px) {
   .form-contacts__parameter--email {
     min-width: 63px;
+  }
+}
+@media (min-width: 1440px) {
+  .form-contacts__parameter--email {
+    /*...*/
   }
 }
 .form-contacts__input {
