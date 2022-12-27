@@ -1,20 +1,8 @@
 .html-academy {
-  width: 100%;
-  min-height: 34px;
-  margin: 0 auto;
+  margin: 0;
   padding: 22px;
   padding-left: 19px;
   padding-right: 20px;
-
-  @media (min-width: @tablet-width) {
-    width: 163px;
-    padding: 0;
-    margin: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    /*...*/
-  }
 }
 
 .html-academy__link {
@@ -24,24 +12,4 @@
   line-height: 18px;
   color: @color-dark-grey;
   text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.html-academy__icon {
-  fill: @color-dark-grey-1;
-
-  &:hover {
-    fill: @color-basic-green;
-  }
-
-  &:active {
-    fill: @color-basic-green;
-    opacity: 0.3;
-  }
 }
