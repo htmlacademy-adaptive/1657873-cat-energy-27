@@ -421,39 +421,85 @@
     margin-bottom: 86px;
   }
 }
+.functional-food {
+  position: relative;
+}
 .functional-food::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 302px;
   left: 0;
-  top: 66px;
   background-color: rgba(104, 183, 56, 0.85);
   z-index: 6;
 }
+.functional-food::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 302px;
+  background-image: url("../img/index-cat-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  background-position: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .functional-food::after {
+    background-image: url("../img/index-cat-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
 @media (min-width: 768px) {
   .functional-food::before {
-    width: 0;
-    height: 0;
+    display: none;
+  }
+  .functional-food::after {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .functional-food::before {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    left: 50%;
+    top: -223px;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: 3;
+  }
+  .functional-food::after {
+    display: block;
+    background-image: url("../img/index-cat-background-desktop.jpg");
+    background-size: cover;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: -223px;
+    min-height: 694px;
+    z-index: 2;
+  }
+}
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .functional-food::after {
+    background-image: url("../img/index-cat-background-desktop@2x.jpg");
+    background-size: cover;
   }
 }
 .functional-food__wrapper {
   margin: 0 auto;
-  background-image: url("../img/index-cat-background-mobile.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
   font-family: "Oswald", "Arial", sans-serif;
   padding: 20px;
   padding-top: 27px;
+  padding-bottom: 0;
   width: 320px;
   position: relative;
-  z-index: 5;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .functional-food__wrapper {
-    background-image: url("../img/index-cat-background-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
+  z-index: 6;
 }
 @media (min-width: 768px) {
   .functional-food__wrapper {
@@ -466,33 +512,9 @@
 @media (min-width: 1440px) {
   .functional-food__wrapper {
     background-image: none;
-    min-width: 920px;
-    min-height: 499px;
+    min-width: 1065px;
+    min-height: 442px;
     padding: 0;
-  }
-  .functional-food__wrapper::after {
-    content: url("../img/index-cat-background-desktop.jpg");
-    position: absolute;
-    left: 487px;
-    top: -206px;
-    min-width: 920px;
-    min-height: 499px;
-    z-index: -1;
-  }
-  .functional-food__wrapper::before {
-    content: "";
-    width: 720px;
-    height: 694px;
-    position: absolute;
-    left: 486px;
-    top: -206px;
-    background-color: rgba(104, 183, 56, 0.85);
-    z-index: 3;
-  }
-}
-@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
-  .functional-food__wrapper::after {
-    content: url("../img/index-cat-background-desktop@2x.jpg");
   }
 }
 .functional-food__title {
@@ -539,6 +561,7 @@
     color: #000000;
     margin-bottom: 49px;
     text-align: left;
+    padding-left: 3px;
   }
 }
 @media (min-width: 1440px) {
@@ -546,7 +569,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 }
 .functional-food__button {
@@ -556,7 +579,7 @@
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 7px;
+  padding: 10px;
   text-align: center;
   width: 280px;
   display: block;
@@ -565,14 +588,16 @@
   .functional-food__button {
     font-size: 20px;
     line-height: 20px;
-    padding: 14px;
+    padding: 17px;
+    width: 247px;
+    padding-left: 22px;
   }
 }
 @media (min-width: 1440px) {
   .functional-food__button {
     font-size: 20px;
     line-height: 20px;
-    padding: 14px;
+    padding: 15px;
   }
 }
 .functional-food__feed-image {
@@ -583,7 +608,7 @@
 }
 @media (min-width: 768px) {
   .functional-food__feed-image {
-    left: -50px;
+    left: -88px;
     top: 200px;
     width: 709px;
     height: 609px;
@@ -592,8 +617,8 @@
 }
 @media (min-width: 1440px) {
   .functional-food__feed-image {
-    left: 330px;
-    top: -46px;
+    left: 368px;
+    top: -82px;
     width: 552px;
     height: 499px;
     z-index: 3;
