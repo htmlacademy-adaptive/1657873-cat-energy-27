@@ -11,16 +11,18 @@
   padding: 0;
   margin: 0;
   margin-bottom: 35px;
+  width: 200px;
   position: relative;
   background-color: @color-white;
   display: inline-block;
   padding-right: 14px;
 
   &::before {
+    padding-left: 14px;
     content: "";
     position: absolute;
     z-index: -2;
-    top: 50%;
+    top: 32%;
     left: 0;
     background-color: @color-basic-green;
     width: 1000%;
@@ -68,7 +70,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1214px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -147,7 +149,7 @@
   text-transform: uppercase;
   width: 100%;
   padding: 13px 30px 12px 12px;
-  border: 1px solid @color-special-grey;
+  border: 1px solid @color-light-grey-4;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -167,13 +169,16 @@
 
   &:focus {
     border: 1px solid @color-dark-grey;
+
+    .form-contacts__icon {
+      fill: @color-basic-green;
+    }
   }
 
   &:invalid {
     border: 1px solid @color-error;
   }
 }
-
 
 .form-contacts__input:focus-visible ~ .form-contacts__icon {
   stroke: @color-basic-green;

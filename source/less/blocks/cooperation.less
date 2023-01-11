@@ -61,11 +61,19 @@
     font-size: 20px;
     line-height: 26px;
     width: 158px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 26px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -78,13 +86,20 @@
   color: @color-dark-grey;
   font-style: normal;
 
-  
+  br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     width: 158px;
     padding: 0;
+
+    br {
+      display: inline;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -92,10 +107,22 @@
     line-height: 20px;
     text-align: left;
     padding: 0;
+
+    br {
+      display: inline;
+    }
   }
 }
 
-.cooperation_maps {
+.cooperation__address-city {
+  display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 19px;
+  }
+}
+
+.cooperation__maps {
   z-index: 1;
   border: none;
   display: block;
