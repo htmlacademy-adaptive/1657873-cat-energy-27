@@ -1,26 +1,29 @@
 .example {
   background-color: @color-light-grey;
-  padding: 0 20px;
+
+  padding: 20px;
   padding-top: 25px;
   padding-bottom: 39px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 100px;
     background: linear-gradient(to bottom, @color-white 57%, @color-light-grey 22%, @color-light-grey 44%, @color-light-grey 44%);
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 26px;
-    padding-top: 26px;
     background: linear-gradient(to bottom, @color-white 26%, @color-light-grey 22%, @color-light-grey 44%, @color-light-grey 44%);
   }
 }
 
 .example__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "description"
@@ -28,8 +31,7 @@
     "range";
 
   @media (min-width: @tablet-width) {
-    width: 705px;
-    padding-top: 23px;
+    width: 768px;
     grid-template-columns: 1fr;
     grid-template-areas: "description"
       "parametrs"
@@ -37,22 +39,29 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 449px 654px;
+    width: 100%;
+    padding-bottom: 0;
+    grid-template-columns: 600px 654px;
     grid-template-rows: 306px 200px;
     gap: 66px 156px;
     grid-template-areas: "description range"
       "parametrs range";
-    width: 1220px;
-    padding: 0;
   }
 }
 
 .example__wrapper-description {
   grid-area: description;
-  width: 282px;
+  padding-left: 21px;
+  width: 301px;
 
   @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
     width: 738px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 147px;
   }
 }
 
@@ -81,12 +90,15 @@
 
 .example__parametrs {
   grid-area: parametrs;
+  padding-left: 21px;
 
   @media (min-width: @tablet-width) {
+    padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
+    padding-left: 145px;
     padding-right: 0;
   }
 }
@@ -96,10 +108,6 @@
 
   @media (min-width: @tablet-width) {
     min-height: 617px;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 616px;
   }
 }
 
@@ -111,20 +119,18 @@
   color: @color-dark-grey;
   margin: 0;
   margin-bottom: 4px;
-  width: 280px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
-    width: 680px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    width: 438px;
+    width: 436px;
   }
 }
 
@@ -168,7 +174,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 0;
+    padding-left: 4px;
   }
 }
 
@@ -179,7 +185,7 @@
 
 .example__button {
   height: 40px;
-  left: 121px;
+  left: 141px;
   top: 96px;
   z-index: 2;
   position: relative;
@@ -194,8 +200,8 @@
     border-radius: 2px;
     content: "";
     position: absolute;
-    top: -109px;
-    left: 17px;
+    top: -110px;
+    left: 47%;
     background-color: @color-dark-grey-1;
 
     @media (min-width: @tablet-width) {
@@ -211,7 +217,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    left: 333px;
+    left: 364px;
     top: 329px;
   }
 
