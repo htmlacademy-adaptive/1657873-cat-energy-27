@@ -1,27 +1,26 @@
 .example {
   background-color: @color-light-grey;
-
-  padding: 20px;
+  padding: 0 20px;
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
-    background-color: @color-white;
+    padding: 0 30px;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, @color-white 57%, @color-light-grey 22%, @color-light-grey 44%, @color-light-grey 44%);
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 0;
-    padding-right: 0;
-    background: linear-gradient(to bottom, @color-white 22%, @color-light-grey 22%, @color-light-grey 44%, @color-light-grey 44%);
+    padding: 0 110px;
+    padding-bottom: 26px;
+    padding-top: 22px;
+    background: linear-gradient(to bottom, @color-white 26%, @color-light-grey 22%, @color-light-grey 44%, @color-light-grey 44%);
   }
 }
 
 .example__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "description"
@@ -29,7 +28,8 @@
     "range";
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 705px;
+    padding-top: 23px;
     grid-template-columns: 1fr;
     grid-template-areas: "description"
       "parametrs"
@@ -37,25 +37,22 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
-    grid-template-columns: 436px 560px;
-    gap: 0 224px;
+    grid-template-columns: 449px 654px;
+    grid-template-rows: 306px 200px;
+    gap: 66px 156px;
     grid-template-areas: "description range"
       "parametrs range";
+    width: 1220px;
+    padding: 0;
   }
 }
 
 .example__wrapper-description {
   grid-area: description;
+  width: 282px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    width: 738px;
   }
 }
 
@@ -86,18 +83,24 @@
   grid-area: parametrs;
 
   @media (min-width: @tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 32px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-right: 0;
   }
 }
 
 .example__range {
   grid-area: range;
+
+  @media (min-width: @tablet-width) {
+    min-height: 617px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 616px;
+  }
 }
 
 .example__description {
@@ -107,19 +110,21 @@
   line-height: 18px;
   color: @color-dark-grey;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
+    width: 680px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 69px;
-    width: 436px;
+    margin: 0;
+    width: 438px;
   }
 }
 
@@ -129,15 +134,18 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
-  width: 188px;
-  margin: 0 auto;
+  width: 235px;
+  padding-left: 46px;
+  margin: 0;
+  margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
-    width: 174px;
     font-size: 20px;
     text-align: right;
     margin: 0;
+    width: 225px;
+    padding-left: 0;
+    padding-top: 11px;
   }
 
   @media (min-width: @desktop-width) {
@@ -152,9 +160,84 @@
 
 .example__cost-description {
   display: inline-block;
+  padding-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 2px;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .example__cost-price {
   margin: 0;
   display: inline-block;
+}
+
+.example__button {
+  height: 40px;
+  left: 121px;
+  top: 96px;
+  z-index: 2;
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+
+  &::before {
+    z-index: -1;
+    height: 256px;
+    width: 4px;
+    border-radius: 2px;
+    content: "";
+    position: absolute;
+    top: -109px;
+    left: 17px;
+    background-color: @color-dark-grey-1;
+
+    @media (min-width: @tablet-width) {
+      top: -237px;
+      height: 512px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -237px;
+      height: 512px;
+      left: 39%;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    left: 333px;
+    top: 329px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 312px;
+    top: 269px;
+  }
+
+  &:hover::before {
+    background-color: @color-basic-green;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
+.example__button:hover {
+  .example__thumb {
+    path {
+      stroke: @color-basic-green;
+      fill: @color-basic-green;
+    }
+
+    rect {
+      stroke: @color-basic-green;
+    }
+  }
 }
