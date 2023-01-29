@@ -165,8 +165,3 @@ export default gulp.series(
   server,
   watcher
 ));
-
-
-/*export default gulp.series(
-  html, optimizeImages, copyImages, createWebp, svg, sprite, copy, clean, scripts, styles, server, watcher
-);*/
